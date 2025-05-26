@@ -12,8 +12,5 @@
     "node-fetch": "^2.6.12",
     "socket.io": "^4.7.2",
     "string-similarity": "^4.0.4"
-  },
-  "scripts": {
-  "start": "node server.js"
-}
+  }
 }
