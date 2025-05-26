@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Anime | AnimeHub</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>AnimeHub</h1>
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Search anime..." value="">
+                <button id="search-btn">Search</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <button id="back-btn" class="back-btn">← Back</button>
+        <div id="anime-container" class="anime-grid"></div>
+        <div id="loading">Loading...</div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Powered by Jikan API</p>
+        </div>
+    </footer>
+
+    <script src="js/search.js"></script>
+</body>
+</html>

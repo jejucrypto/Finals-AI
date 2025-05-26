@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Player</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>AnimeHub</h1>
+        </div>
+    </header>
+
+    <main class="container">
+        <button id="back-btn" class="back-btn">← Back to Anime</button>
+        
+        <div class="player-container">
+            <div class="video-container">
+                <div class="video-wrapper">
+                    <iframe id="video-player" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <h2 id="episode-title"></h2>
+            </div>
+            
+            <div class="episodes-sidebar">
+                <h3>Episodes</h3>
+                <div id="episodes-list"></div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Powered by Jikan API</p>
+        </div>
+    </footer>
+
+    <script src="js/player.js"></script>
+
+
+    <!-- Floating AI Button -->
+<div class="floating-ai-btn" id="aiButton">AI</div>
+
+<!-- AI Chat Window -->
+<div class="ai-chat-container" id="aiChat">
+  <div class="ai-chat-header">
+    <span>Anime AI Assistant</span>
+    <button id="closeChat" style="background: none; border: none; color: white; cursor: pointer;">×</button>
+  </div>
+  <div class="ai-chat-messages" id="chatMessages"></div>
+  <div class="ai-chat-input-container">
+    <input type="text" class="ai-chat-input" id="chatInput" placeholder="Ask about anime...">
+    <button class="ai-chat-send-btn" id="sendMessage">Send</button>
+  </div>
+</div>
+<script src="js/ai-assistant.js"></script>
+
+
+</body>
+</html>
