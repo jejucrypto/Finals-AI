@@ -83,16 +83,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
     async function loadVideoStream(anime, episodeNumber) {
         try {
-            const response = await fetch('http://localhost:3001/api/get-stream-url', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify({
-                    animeTitle: anime.title,
-                    episodeNumber: episodeNumber
-                }),
-            });
+        const response = await fetch('https://finals-ai-production.up.railway.app/api/get-stream-url', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                animeTitle: anime.title,
+                episodeNumber: episodeNumber
+            }),
+        });
 
             const data = await response.json();
             
